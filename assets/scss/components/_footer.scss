@@ -1,0 +1,31 @@
+/* footer */
+.footer{
+    &__data{
+        display: grid;
+        row-gap: .75rem;
+    }
+    &__information{
+        font-size: var(--small-font-size);
+    }
+    &__social{
+        display: inline-flex;
+        column-gap: .75rem;
+
+        &-link{
+            font-size: 1rem;
+            color: var(--text-color);
+            transition: .3s;
+
+            &:hover {
+                transform: translateY(-.25rem);
+            }
+        }
+    }
+
+    &__copy{
+        text-align: center;
+        font-size: var(--smaller-font-size);
+        color: var(--text-color-light);
+        margin: 5rem 0 1rem;
+    }
+}
